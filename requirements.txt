@@ -1,8 +1,5 @@
-streamlit == 1.27.2
+xgboost == 2.0.3
 pandas == 2.1.1
 numpy == 1.26.1
-<<<<<<< HEAD
-scikit-learn==  1.3.0
-=======
-scikit-learn==  1.3.0
->>>>>>> 527533f8c63e1559eb82ff2dc3041c54456ef19a
+scikit-learn==  1.4.0
+dill == 0.3.8
