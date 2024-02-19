@@ -24,11 +24,8 @@ password = st.text_input("Enter Password", type="password")
 # Password strength prediction
 if st.button("Login"):
     x_pred = np.array([password])
-    st.write("Input data:", x_pred)  # Add this line for debugging
     x_pred = vectorizer.transform(x_pred)
-    st.write("Transformed data:", x_pred)  # Add this line for debugging
     predicted = model.predict(x_pred)
-    st.write("Prediction:", predicted)  # Add this line for debugging
     probab = model.predict_proba(x_pred)
     if predicted == 1:
         st.success("Strong Password But Watch Out")
